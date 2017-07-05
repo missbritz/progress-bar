@@ -98,12 +98,12 @@ function updateProgressBar(progID,inc){
 //function updateProgressBar(e){
     var defaultValue,
         newNum,
-        prevNum
+        prevNum,
         newProg = 0,
         newProgRate = 0,
         max = parseInt(maxProgress),
         nProg = 0,
-        addClass = "";
+        addClass;
 
    prevNum = parseInt(document.getElementById(progID).getAttribute("data-percent"));
    defaultValue = parseInt(document.getElementById(progID).getAttribute("data-progress"));
