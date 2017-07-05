@@ -1,6 +1,6 @@
 # progress-bar
-# Author: Britta Mary Oblan
-# Email: brittaoblan@gmail.com
+url: https://missbritz.github.io/progress-bar/
+author: Britta Mary Oblan | brittaoblan@gmail.com
 
 Requirements:
 - Read data from endpoint, http://pb-api.herokuapp.com/bars
@@ -14,10 +14,9 @@ Requirements:
 - Used SASS for CSS preprocessor
 - Minified and packaged using gruntJS
 
-URL: https://missbritz.github.io/progress-bar/
 
 Files:
-App/ - Includes raw files (js/sass)
-js/  - Contains linted and minified scripts
-css/ - Minified css
+- App/ - Includes raw files (js/sass/tests)
+- js/  - Contains linted and minified scripts
+- css/ - Minified css
 
