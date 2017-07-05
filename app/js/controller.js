@@ -16,7 +16,7 @@ function getJSON(url) {
 }
 
 //API Endpoint
-var jdata = JSON.parse(getJSON( 'http://pb-api.herokuapp.com/bars' ));
+var jdata = JSON.parse(getJSON( 'https://pb-api.herokuapp.com/bars' ));
 
 console.log(jdata);
 
