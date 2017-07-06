@@ -126,6 +126,10 @@ body{
                         }
                }
 
+               #preload{
+                        text-align: center;
+               }
+
                #selector{
                         width: $w100;
                         background-color: $c-white;
@@ -151,6 +155,10 @@ body{
                             2.5em 2.5em;
                         background-repeat: no-repeat;
                         @include borderRadius(4px);
+
+                        &.hidden{
+                                display: none;
+                        }
                }
 
                #buttons{
