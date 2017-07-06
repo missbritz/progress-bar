@@ -23,7 +23,6 @@ module.exports = function(grunt) {
         options: {
           // more options here if you want to override JSHint defaults
           globals: {
-            jQuery: true,
             console: true,
             module: true,
             browser: true,
@@ -39,13 +38,24 @@ module.exports = function(grunt) {
         target:{
             files: [{
                 expand: true,
-                cwd: 'css/',
+                cwd: 'app/css/',
                 src: ['*.css', '!*.min.css'],
                 dest: 'css/',
                 ext: '.min.css'
  
             }]
         }
+    },
+
+    imagemin: {                          
+      dynamic: {                         
+        files: [{
+          expand: true,                  
+          cwd: 'app/images',                
+          src: ['**/*.{png,jpg,gif}'],   
+          dest: 'images/'       
+        }]
+      }
     }
  
   });
@@ -60,7 +70,9 @@ module.exports = function(grunt) {
    // Load the plugin that provides the "cssmin" task.
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
+  // Load the plugin that provides the "cssmin" task.
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
  
    // Default task(s).
-  grunt.registerTask('default', ['uglify','cssmin', 'jshint']);
+  grunt.registerTask('default', ['uglify','cssmin', 'jshint', 'imagemin']);
 };

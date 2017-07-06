@@ -43,6 +43,10 @@ function createBars(bars, buttons){
    
     }
 
+    //Remove preloader and show progress bar
+    document.getElementById("selector").classList.remove("hidden");
+    document.getElementById("preload").remove();
+
    document.getElementById("Allbars").innerHTML = barElem;
 
    //Create Buttons
@@ -95,7 +99,6 @@ function createButtons(buttons){
 *   inc    - Increment/Decrement value from button
 */
 function updateProgressBar(progID,inc){
-//function updateProgressBar(e){
     var defaultValue,
         newNum,
         prevNum,
